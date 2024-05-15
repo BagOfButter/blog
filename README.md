@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js Simple Blog Project
 
-## Getting Started
+This project is a simple blog built using Next.js, Redux Toolkit, TypeScript, Firebase DB, and Zod Validation.
 
-First, run the development server:
+## Home Page
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+On the home page user can see all the posts that already exist. The posts are fetched from the db and stored it redux state. Each post may or may NOT have tags which it can be filtered by. Also user can navigate to page where it can create new post. On all pages except home page there is a link on the top right ot navigate to home page.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Create Page
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+On the create page user can create new posts. The title and content are mandatory and go through validation, tags are not. After creating the post user is redirected to the home page.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Post Page
 
-## Learn More
+User can view post details. There he can see the content of the post, leave comments edit or delete the post. Comment is done through a form with one mandatory field. After leaving a comment page immediately displays it. After deleting the post user is redirected to the home page.
 
-To learn more about Next.js, take a look at the following resources:
+## Edit Page
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+User can edit post info in form similar to the form that is used for post creation. After editing user gets redirected to the home page.
