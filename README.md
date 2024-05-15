@@ -8,12 +8,12 @@ On the home page user can see all the posts that already exist. The posts are fe
 
 ## Create Page
 
-On the create page user can create new posts. The title and content are mandatory and go through validation, tags are not. After creating the post user is redirected to the home page.
+On the create page user can create new posts. The title and content are mandatory and go through validation, tags are not. After creating the post user is redirected to the home page. Post can not have the same title as the other post.
 
 ## Post Page
 
-User can view post details. There he can see the content of the post, leave comments edit or delete the post. Comment is done through a form with one mandatory field. After leaving a comment page immediately displays it. After deleting the post user is redirected to the home page.
+User can view post details. There he can see the content of the post, leave comments, edit or delete the post. Comment is done through a form with one mandatory field. After leaving a comment page immediately displays it. After deleting the post user is redirected to the home page.
 
 ## Edit Page
 
-User can edit post info in form similar to the form that is used for post creation. After editing user gets redirected to the home page.
+User can edit post info in form similar to the form that is used for post creation. After editing user gets redirected to the home page.  Post can not have the same title as the other post.
