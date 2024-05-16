@@ -55,14 +55,14 @@ const PostDetail = ({ id }: { id: string }) => {
     dispatch(postsActions.FETCH_POSTS({}));
   }, [dispatch]);
 
-  // useEffect for updatin comments
+  // useEffect for updating comments (caused infinite rerenders, removed it)
 
-  useEffect(() => {
-    const unsubscribe = onSnapshot(doc(db, "posts", id), (snapshot) => {
-      setNewComment(!newComment);
-    });
-    return () => unsubscribe();
-  });
+  // useEffect(() => {
+  //   const unsubscribe = onSnapshot(doc(db, "posts", id), (snapshot) => {
+  //     setNewComment(!newComment);
+  //   });
+  //   return () => unsubscribe();
+  // });
 
   if (!post) {
     return <div>Loading...</div>;
